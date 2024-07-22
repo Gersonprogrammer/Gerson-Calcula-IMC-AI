@@ -39,13 +39,13 @@
         let mensagem = `Olá, ${nome}! Seu IMC é: ${imc}. `;
         
         if (imc < 18.5) {
-          mensagem += 'Você está abaixo do peso.';
+          mensagem += 'Se emagrecer mais... voa..';
         } else if (imc >= 18.5 && imc < 24.9) {
-          mensagem += 'Você está com o peso normal.';
+          mensagem += 'Dá pro gasto.';
         } else if (imc >= 25 && imc < 29.9) {
-          mensagem += 'Você está com sobrepeso.';
+          mensagem += 'Você tá gordo demais.';
         } else {
-          mensagem += 'Você está com obesidade.';
+          mensagem += 'Rolha de poço.';
         }
 
         resultado.textContent = mensagem;
