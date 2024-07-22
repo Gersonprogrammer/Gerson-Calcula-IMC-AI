@@ -28,6 +28,13 @@
   </main>
 
   <script>
+    document.getElementById('altura').addEventListener('input', function (e) {
+  const value = e.target.value;
+  if (value.length === 1 && !value.includes('.')) {
+    e.target.value = value + '.';
+  }
+});
+
     function calcularIMC() {
       const nome = document.getElementById('nome').value;
       const altura = document.getElementById('altura').value;
